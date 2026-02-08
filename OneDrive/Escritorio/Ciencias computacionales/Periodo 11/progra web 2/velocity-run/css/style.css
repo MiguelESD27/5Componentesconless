@@ -1,0 +1,85 @@
+/* Estilos básicos */
+body {
+  font-family: system-ui, sans-serif;
+  padding-top: 70px;
+}
+
+/* Carrusel */
+.carousel-item {
+  height: 70vh;
+  min-height: 500px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  color: #fff;
+}
+
+/* Catálogo */
+.categoria-title {
+  border-left: 5px solid #0d6efd;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .carousel-caption {
+    padding: 10px;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 1.25rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}
