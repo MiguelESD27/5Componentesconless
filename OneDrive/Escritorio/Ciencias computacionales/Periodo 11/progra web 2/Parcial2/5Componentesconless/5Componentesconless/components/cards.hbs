@@ -1,0 +1,13 @@
+<section class="section" id="cards">
+  <h2 class="section__title">Cards</h2>
+
+  <div class="cards">
+    {{#each cards}}
+      <article class="card">
+        <div class="card__icon">{{icon}}</div>
+        <h3 class="card__title">{{title}}</h3>
+        <p class="card__text">{{text}}</p>
+      </article>
+    {{/each}}
+  </div>
+</section>
